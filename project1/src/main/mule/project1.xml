@@ -11,8 +11,12 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="project1Flow" doc:id="5d1f8856-35b3-403d-85cc-751e28b47837" >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<http:listener doc:name="Listener" doc:id="f8aa121e-989c-436c-9789-948c4fd58d1d" config-ref="HTTP_Listener_config" path="/project14"/>
 =======
+>>>>>>> newbranch
+=======
+		<http:listener doc:name="Listener1" doc:id="f8aa121e-989c-436c-9789-948c4fd58d1d" config-ref="HTTP_Listener_config" path="/project12"/>
 >>>>>>> newbranch
 =======
 >>>>>>> 68c08a555e5c0396f24e960a0408de7d5bca4591
