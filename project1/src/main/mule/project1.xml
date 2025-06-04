@@ -28,5 +28,9 @@ output application/json
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+<cloudhub:config name="CloudHub_Config" doc:name="CloudHub Config">
+        <cloudhub:basic-auth-connection username="your.anypoint.email@example.com" password="yourAnypointPassword"/>
+    </cloudhub:config>
 	</flow>
+   
 </mule>
