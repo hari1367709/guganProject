@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration level="DEBUG" packages="com.avioconsulting.mule.opentelemetry.logs.api,com.mulesoft.ch.logging.appender">
+    <Appenders>
+        <MuleOpenTelemetry name="OpenTelemetryAppender" captureContextDataAttributes="*" captureExperimentalAttributes="true"/>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="org.mule.service.http.impl.service.HttpMessageLogger" level="INFO" />
+        <AsyncLogger name="org.mule.service.http" level="WARN" />
+        <AsyncLogger name="org.mule.extension.http" level="WARN" />
+        <AsyncLogger name="com.avioconsulting.mule.opentelemetry" level="INFO" />
+        <AsyncLogger name="io.opentelemetry" level="INFO" />
+        <AsyncRoot level="INFO">
+            <AppenderRef ref="OpenTelemetryAppender" />
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
